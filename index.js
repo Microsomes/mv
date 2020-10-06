@@ -10,8 +10,9 @@ async function processSVGTO64({ svg }) {
     return new Promise(async (resolve, reject) => {
         
         const browser = await puppeteer.launch({
-            headless: false,
+            headless: true,
             args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  executablePath: '/usr/bin/chromium-browser'
             
 
         });

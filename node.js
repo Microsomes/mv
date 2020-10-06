@@ -33,7 +33,7 @@ svgProcess({svg:`<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xli
 	</g>
 </g>
 </svg>`}).then(dr=>{
-    console.log(Object.keys(dr));
+    console.log(dr.twod);
 }).catch(err=>{
     console.log(err);
     console.log("error");
